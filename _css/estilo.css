@@ -1,0 +1,258 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+@font-face {
+    font-family: 'FontLogo';
+    src: url('../_fonts/bubblegum-sans-regular.otf');
+}
+
+body{
+    background-color: #dddddd;
+    color: rgba(0, 0, 0, alpha);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p{
+    text-align: justify;
+    text-indent: 50px;
+}
+a{
+    color: #606060;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+/* Formatação de imagens com legendas */
+
+figure.foto-legenda{
+    position: relative;
+    border: 8px solid white;
+    box-shadow: 1px 1px 4px black;
+}
+
+figure.foto-legenda img{
+    width: 100%;
+    height: 100%;
+}
+
+figure.foto-legenda figcaption{
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: opacity 1s;
+}
+
+figure.foto-legenda:hover figcaption{
+    opacity: 1;
+}
+
+/* formatação do menu */
+nav#menu{
+    display: block;
+}
+
+nav#menu ul{
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: 0;
+    left: 500px;
+}
+
+nav#menu li{
+    display: inline-block;
+    background-color: #dddddd;
+    padding: 10px;
+    margin: 2px;
+}
+
+nav#menu li:hover{
+    background-color: #606060;
+    transition: background-color 1s;
+}
+
+nav#menu h1{
+    display: none;
+}
+
+nav#menu a{
+    color:black;
+    text-decoration: none;
+}
+
+nav#menu a:hover{
+    color: white;
+    text-decoration: none;
+}
+
+div#interface{
+    width: 900px;
+    background-color: white;
+    margin:  -20px auto 0px auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+
+header#cabecalho{
+    border-bottom: 1px #606060 solid;
+    height: 150px;
+    background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 80px ;
+}
+
+header#cabecalho h1{
+    font-family:  'FontLogo', sans-serif;
+    font-size: 30pt;
+    color: #606060;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+header#cabecalho h2{
+    font-family:   'Titillium Web', sans-serif;
+    font-size: 15pt;
+    color: #888888;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+    padding: 0px;
+    margin-top: 0px ;
+}
+
+header#cabecalho img#icone{
+    position: absolute;
+    left: 950px;
+    top: 70px;
+}
+
+section#corpo{
+    display: block;
+    width: 510px;
+    float: left;
+    border-right: 1px solid #606060;
+    padding-right: 15px;
+    margin: auto;
+}
+
+article#noticiaPrincipal h2{
+    font-size: 12pt;
+    color: #606060;
+    background-color: #dddddd;
+    padding: 5px 0px 5px 0px;
+    margin: 10px 0px 10px 0px;
+}
+
+header#cabecalhoArtigo h1{
+    font-family: 'FontLogo',sans-serif;
+    color: #606060;
+    font-size: 20pt;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.direita{
+    text-align: right;
+}
+
+header#cabecalhoArtigo h2{
+    font-size: 13pt;
+    color: #cecece;
+    background-color: #ffffff;
+    margin: 0px;
+    
+}
+
+header#cabecalhoArtigo h3{
+    font-size: 12pt;
+    color: #606060;
+}
+
+
+
+table#tabelaSpec{
+    border: 1px solid #606060;
+    border-spacing: 0;
+    margin-left: auto;
+    margin-left: auto;
+}
+
+table#tabelaSpec td{
+    border: 1px solid #606060;
+    padding: 10px;
+    vertical-align: top;
+}
+
+table#tabelaSpec td.tdLeft{
+    text-align: right;
+    background-color: #606060;
+    color: white;
+    font-weight: bold;
+}
+
+table#tabelaSpec td.tdRight{
+    text-align: left;
+    background-color: #cecece;
+}
+
+table#tabelaSpec caption{
+    color: #888888;
+    font-weight: bolder;
+    font-size: 13pt;
+}
+
+table#tabelaSpec caption span{
+    display: block;
+    float: right;
+    color: #000000;
+    font-size: 8pt;
+    margin-top: 10px;
+}
+
+aside#lateral{
+    display: block;
+    width: 350px;
+    float: right;
+    background-color: #dddddd;
+    padding: 10px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+aside#lateral h1{
+    font-family: 'FontLogo',sans-serif;
+    color: #606060;
+    font-size: 20pt;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+aside#lateral h2{
+    font-size: 13pt;
+    color: #ffffff;
+    background-color: #606060;
+    padding: 5px;
+   /* margin: 10px 0px 10px 0px;*/
+}
+
+
+
+footer#rodape{
+    clear: both;
+    border-top: 1px solid #606060;
+}
+
+footer#rodape p{
+    text-align: center;
+}
+
+video#video01{
+    width: 510px;
+}
+
+video#video02{
+    width: 350px;
+}
